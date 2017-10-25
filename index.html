@@ -1,10 +1,251 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Title</title>
-</head>
-<body>
-<div class="example">Kinga</div>
-<div class="second_example">Łysoń</div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Bootstrap 1</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</head>
+	<body>
+	 	<header>
+			<nav class="nav navbar-default navbar-inverse navbar-fixed-top">
+			    <div class="container">
+			        <div class="navbar-header">
+			            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			                <span class="sr-only">Toggle navigation</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			            </button>
+			            <a class="navbar-brand" href="#">LOGO</a>
+			        </div>
+			        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			            <ul class="nav navbar-nav">
+			                <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+			                <li><a href="#">About me</a></li>
+			                <li><a href="#">Travels</a></li>
+			                <li><a href="#">Contact</a></li>
+			            </ul>
+					    <form class="navbar-form navbar-right" role="search">
+							<div class="form-group">
+		    					<input type="text" class="form-control" placeholder="Search">
+							</div>
+						    <button type="submit" class="btn btn-default">Submit</button>
+						</form>
+			        </div>
+			    </div>
+			</nav>
+		</header>	
+		<section class="first-carousel">
+			<div class="container">
+				<div class="row">
+					<div id="carousel-example-generic" class="carousel slide col-xs-12" data-ride="carousel" data-interval="4000">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    	<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    	<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    	<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					    	<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+						  		<img src="https://images.pexels.com/photos/34950/pexels-photo.jpg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="...">
+								<div class="carousel-caption">
+									<h2>Hello!</h2>
+									<p>I'd like to invite you to see my website</p>	
+								</div>
+							</div>
+							<div class="item">
+						  		<img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="...">
+							</div>
+							<div class="item">
+						  		<img src="https://images.pexels.com/photos/35600/road-sun-rays-path.jpg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="...">
+							</div>
+							<div class="item">
+						  		<img src="https://images.pexels.com/photos/206673/pexels-photo-206673.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="...">
+							</div>
+							<div class="item">
+						  		<img src="https://images.pexels.com/photos/60006/spring-tree-flowers-meadow-60006.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="...">
+							</div>
+						</div>
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="first-travel">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Travels</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet risus ligula. Nulla finibus ac sapien in malesuada. Quisque congue sem augue, nec pretium ligula viverra eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet risus ligula. Nulla finibus ac sapien in malesuada. Quisque congue sem augue, nec pretium ligula viverra eget. Nulla finibus ac sapien in malesuada. Quisque congue sem augue, nec pretium ligula viverra eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Read more about travels</button>
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Lorem ipsum</h4>
+									</div>
+									<div class="modal-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum volutpat urna nec dignissim. Aenean ut arcu et lectus dapibus eleifend eu non ipsum. Vivamus a erat non est blandit consectetur eu eu neque. Nulla eu odio feugiat sem imperdiet tempor. Fusce sed eros quis metus ultrices cursus quis a ligula.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="article">
+			 <div class="container">
+			 	<div class="row">
+				 	<div class="media col-xs-12">
+			  			<div class="media-left">
+							<a href="https://getbootstrap.com/docs/3.3/components/#media">
+								<img class="media-object" src="http://placehold.it/100x100" alt="...">
+						    </a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="https://getbootstrap.com/docs/3.3/components/#media">Travels</a></h4>
+						    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet risus ligula. Nulla finibus ac sapien in malesuada. Quisque congue sem augue, nec pretium ligula viverra eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet risus ligula. Nulla finibus ac sapien in malesuada. Quisque congue sem augue, nec pretium ligula viverra eget. Nulla finibus ac sapien in malesuada. Quisque congue sem augue, nec pretium ligula viverra eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		 </section>
+		 <section class="travels">
+		 	<div class="container">
+		 		<div class="row">
+		 			<div class="col-xs-12">
+			 			<h2 class="my-travels text-center">My travels</h2>
+			 			<table class="table table-bordered table-hover table-responsive">
+				 			<thead>
+				 				<tr>
+				 					<th>Where?</th>
+				 					<th>When?</th>
+				 					<th>How long?</th>
+				 				</tr>
+				 			</thead>
+				 			<tbody>
+				 				<tr>
+				 					<td>Germany</td>
+				 					<td>2016</td>
+				 					<td>14 days</td>
+				 				</tr>
+				 				<tr>
+				 					<td>Spain</td>
+				 					<td>2016</td>
+				 					<td>2 months</td>
+				 				</tr>	
+				 				<tr>
+				 					<td>India</td>
+				 					<td>2014</td>
+				 					<td>3 weeks</td>
+				 				</tr>	
+				 				<tr>
+				 					<td>Ireland</td>
+				 					<td>2010</td>
+				 					<td>7 days</td>
+				 				</tr>
+				 				<tr>
+				 					<td>USA</td>
+				 					<td>soon...</td>
+				 					<td>who knows?</td>
+				 				</tr>
+				 			</tbody>
+			 			</table>
+			 		</div>
+		 		</div>
+		 	</div>
+		 </section>
+		 <section class="first-tab">
+		 	<div class="container">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Germany</a></li>
+					<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Spain</a></li>
+					<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">India</a></li>
+					<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Ireland</a></li>
+				</ul>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="home">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non leo ex. Nulla at metus ante. In hac habitasse platea dictumst. Duis at felis dui. Nullam ac finibus augue. Aliquam sem lectus, fringilla sed tempus non, cursus vel tortor. Nunc dignissim turpis sit amet fermentum lacinia. In dictum justo et sollicitudin lobortis. Duis quam est, tincidunt vel efficitur in, consequat ut ipsum.</p>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="profile">
+						<p>Etiam eros nibh, ornare dictum felis eget, lacinia scelerisque dolor. Morbi felis mi, finibus vestibulum posuere vel, porta a libero. Praesent ac odio eget tellus facilisis commodo. Phasellus ac finibus elit, sit amet fringilla lectus. Aliquam maximus at nibh id imperdiet. Duis varius nulla sit amet lacus vehicula, suscipit convallis orci laoreet. Proin ornare orci feugiat neque vulputate, a fringilla lacus cursus.</p>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="messages">
+						<p>Morbi in massa feugiat, varius odio eget, eleifend justo. Curabitur in purus libero. Aliquam egestas, risus eu finibus rutrum, diam nunc ullamcorper lorem, quis lacinia felis urna non justo. Etiam at dignissim nisi. Donec faucibus, felis vitae pellentesque ullamcorper, nunc nisl malesuada enim, eget vestibulum magna risus a enim. Donec in risus vitae est efficitur cursus ut vitae nulla. Vestibulum lacus sem, consequat malesuada leo quis, dapibus laoreet ex. Aenean cursus nisi nunc. Sed at purus euismod, scelerisque arcu ac, interdum nisl. Etiam scelerisque laoreet dolor, ac auctor purus. Aenean ut accumsan turpis. Cras eget lacus in nibh sagittis vestibulum. </p>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="settings">
+						<p>Praesent non est dictum, rhoncus eros in, sodales lectus. In auctor euismod odio ac pulvinar. Sed feugiat iaculis dui eget scelerisque. Vivamus congue vestibulum luctus. Duis feugiat nisi tempor malesuada dapibus. Morbi porttitor, diam sed tincidunt consequat, turpis risus malesuada tortor, ut eleifend dui nisl id metus. Quisque ac sapien quis leo placerat tempus sit amet vel nibh. Duis volutpat iaculis dolor, nec mattis nisi. Ut pretium blandit erat, sit amet convallis purus ullamcorper vel. Integer pellentesque massa velit, sit amet faucibus eros molestie vel. Phasellus vitae eros porttitor, egestas justo nec, tincidunt ipsum. Nunc quis ultricies magna, vel efficitur elit. Nulla consequat ex id enim venenatis pretium. Nam a velit est. </p>
+					</div>
+				</div>				
+			</div>
+		</section>
+		<section class="gallery">
+			<div class="container">
+				<div class="row">
+					<div class="text-center">
+						<h2>Gallery</h2>
+						<div class="photo col-xs-12 col-sm-4">
+							<img src="https://images.pexels.com/photos/307006/pexels-photo-307006.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail">
+			 			</div>
+						<div class="photo col-xs-12 col-sm-4">
+							<img src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail">
+						</div>
+						<div class="photo col-xs-12 col-sm-4">
+							<img src="https://images.pexels.com/photos/307006/pexels-photo-307006.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="" class="img-thumbnail">
+						</div>
+					</div>
+				</div>
+		 	</div>
+		</section>		
+		<section class="forms">
+			<div class="container">
+		 		<div class="col-xs-12">
+				 	<h4>If you have any questions, send me a message.</h4>
+				 	<form>
+						<div class="form-group">
+						    <label for="name">Name</label>
+						    <input type="name" class="form-control" id="name" placeholder="Name">
+						</div>
+				 		<div class="form-group">
+						    <label for="email">Email address</label>
+						    <input type="email" class="form-control" id="email" placeholder="Email">
+						</div>
+				 		<div class="form-group">
+							<label for="message">Message</label>
+							<textarea class="form-control" rows="3" placeholder="Your message"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+				 	</form>
+		 		</div>	
+			</div>
+		</section>
+		 <footer>
+		 	<div class="container">
+		 		<div class="row">
+		 			<div class="col-xs-12">
+			 			<div class="text-center">
+			 				<p>2017 All right reserved</p>
+			 			</div>
+			 		</div>
+		 		</div>
+		 	</div>
+		 </footer>
+	</body>
 </html>
+		
