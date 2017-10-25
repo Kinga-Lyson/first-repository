@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	margin-top: 70px;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px;
+}
+/*nawigacja*/
+header {
+	border-bottom: 2px solid white;
+}
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-header > a {
+	color: white;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-header > a:hover {
+	color: black;
+}
+#carousel-example-generic {
+	padding: 0;
+}
+.carousel-inner img {
+	width: 100%;
+}
+/*galeria 3 zdjęcia*/
+.photo img {
+	width: 100%;
+}
+.photo img:hover {
+	background-color: rgba(0,0,0,0.3);
+}
+/*artykuł*/
+.article {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+/*tabela podróże*/
+.my-travels {
+	margin-top: 0;
+}
+table th, table tr {
+	text-align: center;
+}
+.tab-content {
+	margin: 15px auto;
+}
+footer {
+	background-color: #333;
+	color: #FFF;
+}
